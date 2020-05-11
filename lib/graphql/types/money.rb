@@ -31,7 +31,7 @@ module GraphQL
       graphql_name 'Money'
       description 'An object representing money, with an amount and currency.'
 
-      field :fractional, Integer, 'Fractional unit value of a given currency.', null: false
+      field :fractional, GraphQL::Types::BigInt, 'Fractional unit value of a given currency.', null: false
 
       field :amount, Float, 'Numerical amount of the money.', null: false
 

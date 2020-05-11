@@ -10,7 +10,7 @@ module GraphQL
       description 'An input object representing money, with an amount and '\
                   'currency'
 
-      argument :fractional, Integer, 'Fractional unit value of a given currency', required: true
+      argument :fractional, GraphQL::Types::BigInt, 'Fractional unit value of a given currency', required: true
 
       argument :iso_code,
                ISO4217,
